@@ -34,7 +34,7 @@ const Survey = () => {
       };
     
       // Save the survey responses to localStorage
-      localStorage.setItem('surveyResponses', JSON.parse(surveyResponses));
+      localStorage.setItem('surveyResponses', JSON.stringify(surveyResponses));
 
     // Reset form fields
     setProductSatisfaction('');

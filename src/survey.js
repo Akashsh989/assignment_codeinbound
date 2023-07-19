@@ -44,6 +44,10 @@ const Survey = () => {
     setImprovements('');
 
     setIsSubmitted(true);
+
+    setTimeout(() => {
+    window.location.reload();
+  }, 2000);
   };
 
   const renderSurvey = () => {

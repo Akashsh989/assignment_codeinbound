@@ -25,6 +25,17 @@ const Survey = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    const surveyResponses = {
+        productSatisfaction,
+        priceFairness,
+        valueForMoney,
+        recommendation,
+        improvements,
+      };
+    
+      // Save the survey responses to localStorage
+      localStorage.setItem('surveyResponses', JSON.parse(surveyResponses));
+
     // Reset form fields
     setProductSatisfaction('');
     setPriceFairness('');
